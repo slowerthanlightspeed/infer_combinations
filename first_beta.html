@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Beta</title>
+<link type="text/css" rel="stylesheet" href="combo_guess.css">
+</head>
+
+<body style="text-align:center;">
+<h1>Combo deduction</h1>
+
+<h2>Given</h2>
+<div id="hintRows"></div>
+
+<h2>What is the combo?</h2>
+<div id="answerRows">
+	<div id="textAnswers" class="hintWrapper clearfix" style="width:130px;">
+		<p class="inputP"><label for="input1" class="inputLabel">First position guess.</label><input id="tinput1" type="text" class="inputText" /></p>
+		<p class="inputP"><label for="input2" class="inputLabel">Second position guess.</label><input id="tinput2" type="text" class="inputText" /></p>
+		<p class="inputP"><label for="input3" class="inputLabel">Third position guess.</label><input id="tinput3" type="text" class="inputText" /></p>
+	</div>
+	<div id="picAnswers" class="hintWrapper clearfix" style="width:234px; height:78px;">
+		<p class="inputP"><img id="pinput1" src="blank.png" class="inputPic" alt="First position guess."></p>
+		<p class="inputP"><img id="pinput2" src="blank.png" class="inputPic" alt="Second position guess."></p>
+		<p class="inputP"><img id="pinput3" src="blank.png" class="inputPic" alt="Third position guess."></p>
+	</div>
+</div>
+
+<button id="clearPartialAnswer" style="margin-top:8px; display:none;">Clear</button>
+<p><span id="liveMinutes">0:</span><span id="liveSeconds">00</span></p>
+<p style="margin-top:24px;">Correct answers given: <span id="correctCount">0</span></p>
+<p>Wrong answers given: <span id="wrongCount">0</span></p>
+<p>Current streak: <span id="currentStreak">0</span></p>
+<p>Best streak: <span id="bestStreak">0</span></p>
+<p>Average time: <span id="avgTime">0</span></p>
+<p>Worst time: <span id="worstTime">0</span></p>
+<p>Best time: <span id="bestTime">0</span></p>
+<script type="text/javascript" src="first_beta.js"></script>
+</body>
+
+</html>
